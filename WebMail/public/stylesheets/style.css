@@ -1,0 +1,301 @@
+body {
+  padding: 50px;
+  font: 14px "Courier", Helvetica, Arial, sans-serif;
+  background-image: url(../images/pexels-photo-1227648.jpeg);
+}
+
+a {
+  color: #00B7FF;
+}
+
+:root{
+  --display: block;
+}
+
+#heading{
+  display: flex;
+  border: 2px solid black;
+  margin:auto;
+  width:97%;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background: rgb(242,130,118);
+  background: linear-gradient(90deg, rgba(242,130,118,1) 0%, rgba(250,162,127,1) 50%, rgba(244,141,119,1) 100%);
+}
+
+#function{
+  display: flex;
+  justify-content: space-around;
+  border: 2px solid black;
+  align-items: center;
+  border-top: 0px;
+  margin: auto;
+  width: 97%;
+  height: 50px;
+  background: rgb(242,130,118);
+  background: linear-gradient(90deg, rgba(242,130,118,1) 0%, rgba(250,162,127,1) 50%, rgba(244,141,119,1) 100%);
+}
+
+#holder{
+  margin:auto;
+  width:97%;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  height: 500px;
+  background: rgb(242,130,118);
+  background: linear-gradient(90deg, rgba(242,130,118,1) 0%, rgba(250,162,127,1) 50%, rgba(244,141,119,1) 100%);
+}
+
+#mailbox{
+  display: flex;
+  border: 2px solid black;
+  border-top: 0px;
+  width: 100%;
+  height: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  order: 1;
+  flex-basis: 40%;
+  flex-direction: column;
+}
+
+#email{
+  font-size: 1.25vw;
+  display:flex;
+  flex-direction: column;
+  border: 2px solid black;
+  border-top: 0px;
+  border-left: 0px;
+  margin:auto;
+  width:100%;
+  height: 100%;
+  order:2;
+}
+
+.emailContainer{
+  
+  display:flex;
+  background: white;
+  border: 1px solid black;
+  margin-bottom: 5px;
+  margin-left: 3px;
+  margin-right: 2px;
+  width: 98%;
+  justify-content: flex-start;
+  align-items: center;
+  height:40px;
+}
+
+.emailContainer:hover{
+  background: rgb(83,99,64);
+  background: linear-gradient(90deg, rgba(83,99,64,1) 0%, rgba(82,101,64,1) 50%, rgba(66,84,51,1) 100%);
+  cursor:pointer;
+}
+
+#allEmailContainer{
+  margin-top: 10px;
+  font-size: 80%;
+  border: 0px solid black;
+  display: flex;
+  flex-basis: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.buttons{
+  font: inherit;
+  font-size: 13px;
+  padding: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  border: 2px solid black; 
+}
+
+.link{
+  cursor: pointer;
+  width: 70%;
+  padding: 4px;
+  margin: 2px;
+  background-color: white;
+  color: black;
+  border: 2px solid black; 
+}
+
+.link:hover{
+  background-color: gray;
+
+}
+
+#Inbox{
+  margin-top: 10px;
+}
+
+.fullEmail{
+  margin-top: 10px;
+  font-size: 100%;
+  border: 0px solid black;
+  display: flex;
+  flex-basis: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.emailTop{
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  padding: 5px;
+  justify-content: space-between;
+}
+
+#sender{
+  display: flex;
+  width: 90%;
+  padding: 5px;
+  justify-content: flex-start;
+}
+#recipient{
+  display: flex;
+  width: 90%;
+  padding: 5px;
+  justify-content: flex-start;
+}
+
+#content{
+  margin-top: 25px;
+  display: flex;
+  width: 90%;
+  padding: 5px;
+  justify-content: flex-start;
+}
+
+.check{
+  flex-basis: 7%;
+}
+.receptor{
+  display: flex;
+  justify-content: flex-start;
+  flex-basis: 32%;
+}
+
+.theTime{
+  display: flex;
+}
+
+.titles{
+  display: flex;
+  justify-content: flex-start;
+  flex-basis: 28%;
+}
+
+.dropdown{
+  overflow: hidden;
+}
+.dropdown-content{
+  position: absolute;
+  display: none;
+  z-index: 1000;
+  width: 100px;
+}
+
+.dropdown-content div{
+  display: block;
+}
+
+.dropdown:hover .dropdown-content{
+  display: var(--display);
+}
+
+.movers{
+  display: flex;
+  justify-content: center;
+  font-size: 13px;
+  padding: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  border: 2px solid black; 
+  border-top: 0px;
+}
+
+.movers:hover{
+  background-color: gray;
+}
+
+#moveToButton{
+  width: 100px;
+}
+
+#composer{
+  display: flex;
+  flex-basis: 100%;
+  flex-direction: column;
+
+}
+
+#newmessage{
+  display: flex;
+  margin: 5px;
+}
+
+#to{
+  display: flex;
+  padding: 5px;
+  margin: 5px;
+  justify-content: space-between;
+  align-content: center;
+}
+
+#subject{
+  display: flex;
+  padding: 5px;
+  margin: 5px;
+  justify-content: space-between;
+  align-content: center;
+}
+
+#textlarge{
+  display: flex;
+  padding: 5px;
+  margin: 5px;
+}
+
+#submitButt{
+  display: flex;
+  padding: 5px;
+  margin: 5px;
+  justify-content: flex-start;
+}
+
+input{
+  width: 85%;
+  height: 20px;
+}
+
+textarea{
+  width: 100%;
+  height: 150px;
+}
+
+h2{
+  padding: 2px;
+}
+
+#submitButton{
+  width: 20%;
+  height: 30px;
+}
+
+.emailTop{
+  border-bottom: 2px solid black;
+  margin-bottom: 5px;
+}

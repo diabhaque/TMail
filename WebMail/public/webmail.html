@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./stylesheets/style.css">
+    <title>WebMail</title>
+</head>
+<body onload="getMailNew('Inbox'); setMaxPages(); getIds()">
+    <div id="heading">
+        <h1>T Mail</h1>
+    </div>
+    <div id="function">
+        <button id="composeButton" class="buttons" onclick='composeEmail()'> Compose</button>
+        <div class='dropdown'>
+            <button class="buttons" id="moveToButton">Move to...</button>
+            <div class='dropdown-content'>
+                <div class='movers' onclick='moveTo("Inbox")'>Inbox</div>
+                <div class='movers' onclick='moveTo("Important")'>Important</div>
+                <div class='movers' onclick='moveTo("Sent")'>Sent</div>
+                <div class='movers' onclick='moveTo("Trash")'>Trash</div>
+            </div>
+        </div>
+        <div id="changePage">
+            <button onclick="prevPage()" class="buttons"><</button>
+            <button onclick="nextPage()" class="buttons">></button>
+        </div>
+    </div>
+    <div id="holder">
+        <div id="mailbox">
+            <div onclick='getMailNew("Inbox")' class='link' id='Inbox'>Inbox</div>
+            <div onclick='getMailNew("Important")' class='link' id='Important'>Important</div>
+            <div onclick='getMailNew("Sent")' class='link' id='Sent'>Sent</div>
+            <div onclick='getMailNew("Trash")' class='link' id='Trash'>Trash</div>
+        </div>
+        <div id="email">
+        </div>
+    </div>
+    <script src="./javascripts/script.js"></script>
+</body>
+</html>
